@@ -5,11 +5,11 @@ import { fetchDataFromApi } from "@/utils/api"
 
 export default function Home({ products }) {
   return (
-    <main className="h-[3000px]">
+    <main>
       <HeroBanner />
-      <h1>{products?.data?.[0]?.attributes?.name}</h1>
+      <h1 className="text-xl md:text-3xl font-semibold mt-24 ml-5 ">Fresh Arrivals</h1>
       <Wrapper>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 my-14 px-5 md:px-0 content-evenly">
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-3 my-10 px-3 md:px-0 content-evenly">
           {products?.data?.map((product) => (
             <ProductCard key={product?.id} data={product} />
           ))}

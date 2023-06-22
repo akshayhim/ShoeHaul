@@ -10,25 +10,25 @@ import PaymentLogos from "./PaymentLogos";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white pt-14 pb-3">
-      <Wrapper className="flex justify-between flex-col md:flex-row gap-[50px] md:gap-0">
+    <footer className="bg-black text-white pt-8 pb-3">
+      <Wrapper className="flex justify-between flex-col md:flex-row gap-[30px] md:gap-0">
         {/* LEFT START */}
-        <div className="flex gap-[50px] md:gap-[75px] lg:gap-[100px] flex-col md:flex-row">
+        <div className="flex gap-[40px] md:gap-[75px] lg:gap-[100px] flex-col md:flex-row">
           {/* MENU START */}
-          <div className="flex flex-col gap-3 shrink-0">
-            <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
+          <div className="text-xs gap-2.5 flex flex-col md:gap-3 shrink-0 font-oswald font-medium uppercase md:text-sm cursor-pointer">
+            <div>
               Our Mission
             </div>
-            <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
+            <div>
               become a partner
             </div>
-            <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
+            <div>
               sign up for email
             </div>
-            <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
+            <div>
               send us feedback
             </div>
-            <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
+            <div>
               offers & discounts
             </div>
           </div>

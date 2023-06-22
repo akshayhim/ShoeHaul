@@ -7,6 +7,7 @@ import RelatedProducts from "@/components/RelatedProducts";
 import { fetchDataFromApi } from "@/utils/api";
 import { addToCart } from "../store/cartSlice";
 import { useSelector, useDispatch } from "react-redux";
+import Image from "next/image";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -49,21 +50,21 @@ const ProductDetails = ({ product, products }) => {
                         </div>
 
                         {/* PRODUCT SUBTITLE */}
-                        <div className="text-lg font-semibold mb-5">
+                        <div className="text-lg font-light mb-5">
                             {p.subtitle}
                         </div>
 
                         {/* PRODUCT PRICE */}
                         <div className="flex items-center">
-                            <p className="mr-2 text-lg font-semibold">
+                            <p className="mr-2 text-2xl font-semibold">
                                 &#8377;{p.price}
                             </p>
                         </div>
-                        <div className="text-md font-medium text-black/[0.5]">
+                        <div className="text-md font-medium text-black/[0.4]">
                             incl. of taxes
                         </div>
-                        <div className="text-md font-medium text-black/[0.5] mb-20">
-                            {`(Also includes all applicable duties)`}
+                        <div className="text-md font-medium text-black/[0.5] mb-10">
+                            {/* {`(Also includes all applicable duties)`} */}
                         </div>
                         {/* PRODUCT SIZE RANGE START */}
                         <div className="mb-10">
@@ -72,14 +73,21 @@ const ProductDetails = ({ product, products }) => {
                                 <div className="text-md font-semibold">
                                     Select Size
                                 </div>
-                                <div className="text-md font-medium text-black/[0.5] cursor-pointer">
-                                    Select Guide
+                                <div className="text-md font-medium text-black/[0.5] cursor-pointer" onClick={() => {
+                                    document
+                                    .getElementById("sizechart")
+                                    .scrollIntoView({
+                                        block: "center",
+                                        behavior: "smooth",
+                                    });
+                                }}>
+                                    Size Chart
                                 </div>
                             </div>
                             {/* HEADING END */}
 
                             {/* SIZE START */}
-                            <div id="sizesGrid" className="grid grid-cols-3 gap-2">
+                            <div id="sizesGrid" className="grid grid-cols-3 gap-0">
                                 {p.size.data.map((item, i) => (
                                     <div
                                         key={i}
@@ -152,6 +160,11 @@ const ProductDetails = ({ product, products }) => {
                                 <ReactMarkdown>{p.description}</ReactMarkdown>
                             </div>
                         </div>
+                        {/* SIZE CHART START */}
+                        <div id="sizechart" className="mt-10">
+                            <Image src="/sizeChart.png" width={310} height={900} alt="Size chart"/>
+                        </div>
+                            {/* SIZE CHART END */}
                     </div>
                     {/* right column end */}
                 </div>

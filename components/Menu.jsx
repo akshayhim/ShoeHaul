@@ -1,14 +1,14 @@
 import React from "react";
 import Link from "next/link";
 
-const data = [
-  { id: 1, name: "AIR JORDAN", url: "/air-jordan" },
-  { id: 2, name: "NIKE", url: "/NIKE" },
-  { id: 3, name: "ADIDAS", url: "/adidas" },
-  { id: 4, name: "NEW BALANCE", url: "/new-balance" },
-  { id: 5, name: "SALE", url: "/sale" },
-  { id: 5, name: "CONTACT", url: "/contact" },
-];
+// const data = [
+//   { id: 1, name: "AIR JORDAN", url: "/air-jordan" },
+//   { id: 2, name: "NIKE", url: "/NIKE" },
+//   { id: 3, name: "ADIDAS", url: "/adidas" },
+//   { id: 4, name: "NEW BALANCE", url: "/new-balance" },
+//   { id: 5, name: "SALE", url: "/sale" },
+//   { id: 5, name: "CONTACT", url: "/contact" },
+// ];
 
 const Menu = ({ categories }) => {
     return (
@@ -18,10 +18,15 @@ const Menu = ({ categories }) => {
             <React.Fragment key={id}>
               <li className="cursor-pointer">
                 <Link href={`/category/${c.slug}`}>{c.name}</Link>
+                
               </li>
+              
             </React.Fragment>
           );
         })}
+        <Link href='/contact'>
+          <span>contact</span>
+        </Link>
       </ul>
     );
   };
