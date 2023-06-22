@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
-// import { IoMdHeartEmpty } from "react-icons/io";
 import Wrapper from "@/components/Wrapper";
 import ProductDetailsCarousel from "@/components/ProductDetailsCarousel";
 import RelatedProducts from "@/components/RelatedProducts";
 import { fetchDataFromApi } from "@/utils/api";
-import { addToCart } from "../store/cartSlice";
+import { addToCart } from "@/store/cartSlice";
 import { useSelector, useDispatch } from "react-redux";
 import Image from "next/image";
 
