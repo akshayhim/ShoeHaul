@@ -25,7 +25,7 @@ const Menu = ({ categories }) => {
           );
         })}
         <Link href='/contact'>
-          <span>contact</span>
+          <span>Contact</span>
         </Link>
       </ul>
     );
