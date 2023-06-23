@@ -15,8 +15,6 @@ const ProductDetailsCarousel = ({ images }) => {
         {images?.map((img) => (
           <img key={img.id} src={img.attributes.url} alt={img.attributes.name} />
         ))}
-        {/* <img src="/air-jordan-1-low-shoes-459b4T.jpg" alt="a" />
-        <img src="/air-jordan-1-low-shoes-459b4T (1).jpg" alt="" /> */}
       </Carousel>
     </div>
   );
