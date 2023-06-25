@@ -27,6 +27,9 @@ const MenuMobile = ({ setMobileMenu, categories }) => {
           </li>
         );
       })}
+      <Link href='/contact'>
+          <span>Contact</span>
+        </Link>
     </ul>
   );
 };
