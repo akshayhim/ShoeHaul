@@ -27,9 +27,15 @@ const MenuMobile = ({ setMobileMenu, categories }) => {
           </li>
         );
       })}
-      <Link href='/contact'>
-          <span>Contact</span>
-        </Link>
+      <Link
+        href="/contact"
+        onClick={() => {
+          setMobileMenu(false);
+        }}
+        className="py-4 px-5 border-b"
+      >
+        <span>Contact</span>
+      </Link>
     </ul>
   );
 };
