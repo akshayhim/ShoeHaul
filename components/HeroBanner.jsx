@@ -40,9 +40,9 @@ const HeroBanner = () => {
             className="aspect-[16/10] md:aspect-auto object-contain md:object-cover"
           />
           <Link href={`/category/new-balance`}>
-          <div className="px-[15px] md:px-[18px] py-[10px] md:py-[20px] font-oswald bg-white/[1] absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.9] text-[10px] md:text-[20px] uppercase cursor-pointer rounded-e-lg font-extrabold opacity-90 hover:opacity-80 hover:bg-white/[0.9] hover:text-black/[1] hover:rounded-e-xl">
-            Shop now
-          </div>
+            <div className="px-[15px] md:px-[18px] py-[10px] md:py-[20px] font-oswald bg-white/[1] absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.9] text-[10px] md:text-[20px] uppercase cursor-pointer rounded-e-lg font-extrabold opacity-90 hover:opacity-80 hover:bg-white/[0.9] hover:text-black/[1] hover:rounded-e-xl">
+              Shop now
+            </div>
           </Link>
         </div>
         <div>
@@ -53,10 +53,10 @@ const HeroBanner = () => {
             alt="Adidas golf poster"
             className="aspect-[16/10] md:aspect-auto object-contain md:object-cover"
           />
-         <Link href={`/category/adidas`}>
-          <div className="px-[15px] md:px-[18px] py-[10px] md:py-[20px] font-oswald bg-white/[1] absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.9] text-[10px] md:text-[20px] uppercase cursor-pointer rounded-e-lg font-extrabold opacity-90 hover:opacity-80 hover:bg-white/[0.9] hover:text-black/[1] hover:rounded-e-xl">
-            Shop now
-          </div>
+          <Link href={`/category/adidas`}>
+            <div className="px-[15px] md:px-[18px] py-[10px] md:py-[20px] font-oswald bg-white/[1] absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.9] text-[10px] md:text-[20px] uppercase cursor-pointer rounded-e-lg font-extrabold opacity-90 hover:opacity-80 hover:bg-white/[0.9] hover:text-black/[1] hover:rounded-e-xl">
+              Shop now
+            </div>
           </Link>
         </div>
 
@@ -69,9 +69,9 @@ const HeroBanner = () => {
             className="aspect-[16/10] md:aspect-auto object-contain md:object-cover"
           />
           <Link href={`/category/air-jordan`}>
-          <div className="px-[15px] md:px-[18px] py-[10px] md:py-[20px] font-oswald bg-white/[1] absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.9] text-[10px] md:text-[20px] uppercase cursor-pointer rounded-e-lg font-extrabold opacity-90 hover:opacity-80 hover:bg-white/[0.9] hover:text-black/[1] hover:rounded-e-xl">
-            Shop now
-          </div>
+            <div className="px-[15px] md:px-[18px] py-[10px] md:py-[20px] font-oswald bg-white/[1] absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.9] text-[10px] md:text-[20px] uppercase cursor-pointer rounded-e-lg font-extrabold opacity-90 hover:opacity-80 hover:bg-white/[0.9] hover:text-black/[1] hover:rounded-e-xl">
+              Shop now
+            </div>
           </Link>
         </div>
         <div>
@@ -83,23 +83,9 @@ const HeroBanner = () => {
             className="aspect-[16/10] md:aspect-auto object-contain md:object-cover"
           />
           <Link href={`/category/new-balance`}>
-          <div className="px-[15px] md:px-[18px] py-[10px] md:py-[20px] font-oswald bg-white/[1] absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.9] text-[10px] md:text-[20px] uppercase cursor-pointer rounded-e-lg font-extrabold opacity-90 hover:opacity-80 hover:bg-white/[0.9] hover:text-black/[1] hover:rounded-e-xl">
-            Shop now
-          </div>
-          </Link>
-        </div>
-        <div>
-          <Image
-            src="/ad2.png"
-            width={1920}
-            height={600}
-            alt="adidas predator banner"
-            className="aspect-[16/10] md:aspect-auto object-contain md:object-cover"
-          />
-          <Link href={`/category/adidas`}>
-          <div className="px-[15px] md:px-[18px] py-[10px] md:py-[20px] font-oswald bg-white/[1] absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.9] text-[10px] md:text-[20px] uppercase cursor-pointer rounded-e-lg font-extrabold opacity-90 hover:opacity-80 hover:bg-white/[0.9] hover:text-black/[1] hover:rounded-e-xl">
-            Shop now
-          </div>
+            <div className="px-[15px] md:px-[18px] py-[10px] md:py-[20px] font-oswald bg-white/[1] absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.9] text-[10px] md:text-[20px] uppercase cursor-pointer rounded-e-lg font-extrabold opacity-90 hover:opacity-80 hover:bg-white/[0.9] hover:text-black/[1] hover:rounded-e-xl">
+              Shop now
+            </div>
           </Link>
         </div>
       </Carousel>
